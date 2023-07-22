@@ -48,9 +48,9 @@ function Navbar() {
           navActive
             ? "absolute inset-0 z-50 overflow-hidden bg-green-700"
             : "hidden"
-        } `}
+        } lg:hidden`}
       >
-        <div className="flex items-center justify-between p-3">
+        <div className="flex items-center justify-between p-3 ">
           <div className="flex items-center space-x-3">
             <Image
               src="/images/grand_palace_logo.png"
