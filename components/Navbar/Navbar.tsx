@@ -10,7 +10,7 @@ import { CiFacebook, CiInstagram, CiTwitter, CiYoutube } from "react-icons/ci";
 const MENU_LIST = [
   { text: "Home", href: "/" },
   { text: "About Us", href: "/about" },
-  { text: "Products", href: "/product" },
+  { text: "Products", href: "/products" },
   { text: "Gallery", href: "/gallery" },
   { text: "Contact", href: "/contact" },
 ];
