@@ -89,7 +89,7 @@ function Navbar() {
             ))}
             <div>
               <h5 className="mb-3 text-center font-semibold text-green-300">
-                Let's Talk
+                Let{`'`}s Talk
               </h5>
               <Button>Request a Quote</Button>
             </div>
