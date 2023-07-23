@@ -87,7 +87,7 @@ function Navbar() {
                 <NavItem active={activeIdx === idx} {...menu} />
               </ul>
             ))}
-            <div className="">
+            <div>
               <h5 className="mb-3 text-center font-semibold text-green-300">
                 Let's Talk
               </h5>
