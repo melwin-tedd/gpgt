@@ -63,32 +63,32 @@ const sliderData = [
     title: "Across Industries",
   },
   {
+    img: "/images/importing_goods.jpg",
+    location: "Import",
+    description:
+      "Your trusted source for superior materials across multiple sectors.",
+    title: "Import",
+  },
+  {
     img: "/images/Export.jpg",
-    title: "The Grand Canyon",
+    title: "Export",
     description:
       "The earth's geological history opens before your eyes in a mile-deep chasm",
     location: "Export",
   },
   {
-    img: "/images/3.png",
-    title: "Masai Mara",
+    img: "/images/young-man-working-warehouse-with-boxes.jpg",
+    title: "Wholesale",
     description:
       "Wild animals in their natural environment, luxury safari lodges",
-    location: "Kenya",
+    location: "Wholesale",
   },
   {
-    img: "/images/4.png",
-    title: "Angkor Wat",
+    img: "/images/A_man_selling_goods.jpg",
+    title: "Retail",
     description:
       "A stunning ancient jungle city with hundreds of intricately constructed temples",
-    location: "Cambodia",
-  },
-  {
-    img: "/images/7.png",
-    title: "Bali",
-    description:
-      "Tropical beaches, volcano hikes, ancient temples, and friendly people",
-    location: "Indonesia",
+    location: "Retail",
   },
 ];
 
