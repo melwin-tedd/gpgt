@@ -41,7 +41,7 @@ function About() {
           </div>
         </div>
 
-        <div className="col-span-2 flex w-full items-end rounded-lg bg-blue-400 p-6">
+        <div className="col-span-2 flex h-64 w-full items-end rounded-lg bg-blue-400 p-6 md:h-auto">
           <Button>
             <FiPlay className="text-xl " />
             Play Video
