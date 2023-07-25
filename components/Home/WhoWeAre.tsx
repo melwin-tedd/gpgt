@@ -46,7 +46,12 @@ function WhoWeAre() {
       </section>
       <div className="mx-auto -mt-9 grid max-w-7xl grid-cols-3 gap-4">
         {cardContent.map((item, i) => (
-          <GlassContainer title={item.title} desc={item.desc} img={item.img} />
+          <GlassContainer
+            key={i}
+            title={item.title}
+            desc={item.desc}
+            img={item.img}
+          />
         ))}
       </div>
     </>
