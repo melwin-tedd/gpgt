@@ -21,14 +21,13 @@ function About() {
               areas of procurement, sales, delivery, and after-sales support
               across various industries and product categories.
             </p>
-            <div>
-              <Link
-                href="/about"
-                className="rounded-md border border-green-800 px-6 py-2 font-bold text-green-800 transition-colors duration-300 hover:border-green-400 hover:bg-green-400"
-              >
-                Who we are, what we stand for
-              </Link>
-            </div>
+
+            <Link
+              href="/about"
+              className="rounded-md border border-green-800 px-6 py-2 font-bold text-green-800 transition-colors duration-300 hover:border-green-400 hover:bg-green-400"
+            >
+              Who we are, what we stand for
+            </Link>
           </div>
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-green-800">Follow us</h3>

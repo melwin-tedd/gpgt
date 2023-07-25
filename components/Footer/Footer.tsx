@@ -63,6 +63,7 @@ function Footer() {
               </div>
             </div>
           </div>
+
           <div className="space-y-6">
             <div className="">
               <h6 className="mb-3 font-bold text-blue-400">Company</h6>

@@ -1,14 +1,9 @@
-import Button from "@/components/Button";
 import Carousel from "@/components/Carousel/Carousel";
+import Cta from "@/components/Cta/Cta";
+import Expertise from "@/components/Expertise/Expertise";
 import About from "@/components/Home/About";
-import ProductCard from "@/components/ProductCard";
-
-const products = [
-  { text: "Who we are", href: "/about" },
-  { text: "Vision", href: "/about" },
-  { text: "Mission", href: "/about" },
-  { text: "Careers", href: "/about" },
-];
+import WhoWeAre from "@/components/Home/WhoWeAre";
+import Products from "@/components/Products/Products";
 
 export default function Home() {
   return (
@@ -16,12 +11,14 @@ export default function Home() {
       <Carousel />
       <main className="">
         <About />
-        <section>
-          <h4>Discover Our Range</h4>
-          <div>
-            <ProductCard />
-          </div>
-        </section>
+
+        <Products />
+
+        <WhoWeAre />
+
+        <Expertise />
+
+        <Cta />
       </main>
     </>
   );
