@@ -1,6 +1,24 @@
 import Image from "next/image";
 import GlassContainer from "./GlassContainer";
 
+const cardContent = [
+  {
+    title: "Quality Products",
+    desc: "Uncompromising Quality, Every Time.",
+    img: "/icons/quality.svg",
+  },
+  {
+    title: "Affordable Prices",
+    desc: "Unbeatable value for your budget.",
+    img: "/icons/prices.svg",
+  },
+  {
+    title: "On-Time Delivery",
+    desc: "Timely deliveries, guaranteed.",
+    img: "/icons/package.svg",
+  },
+];
+
 function WhoWeAre() {
   return (
     <>
@@ -27,9 +45,9 @@ function WhoWeAre() {
         </div>
       </section>
       <div className="mx-auto -mt-9 grid max-w-7xl grid-cols-3 gap-4">
-        <GlassContainer />
-        <GlassContainer />
-        <GlassContainer />
+        {cardContent.map((item, i) => (
+          <GlassContainer title={item.title} desc={item.desc} img={item.img} />
+        ))}
       </div>
     </>
   );

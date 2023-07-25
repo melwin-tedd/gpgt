@@ -7,43 +7,60 @@ const products = [
     title: "Building Materials",
     desc: "Building expertise all here",
     url: "/products",
-    img: "/images/1.png",
+    img: "/images/building_materials.png",
   },
   {
     title: "Safety Products",
     desc: "",
     url: "/products",
-    img: "/images/2.png",
+    img: "/images/safety_items.png",
   },
-  { title: "Hardware Items", desc: "", url: "/products", img: "/images/3.png" },
+  {
+    title: "Hardware Items",
+    desc: "",
+    url: "/products",
+    img: "/images/hardware_items.png",
+  },
   {
     title: "Electrical Items",
     desc: "",
     url: "/products",
-    img: "/images/4.png",
+    img: "/images/electrical_items.png",
   },
-  { title: "Plumbing items", desc: "", url: "/products", img: "/images/5.png" },
+  {
+    title: "Plumbing items",
+    desc: "",
+    url: "/products",
+    img: "/images/plumping_items.png",
+  },
   { title: "Sanitaryware", desc: "", url: "/products", img: "/images/6.png" },
   {
     title: "Glass & Aluminium",
     desc: "",
     url: "/products",
-    img: "/images/7.png",
+    img: "/images/glass_aluminium.png",
   },
   {
     title: "Stationary items",
     desc: "",
     url: "/products",
-    img: "/images/1.png",
+    img: "/images/sanitaryware.png",
   },
-  { title: "Computer items", desc: "", url: "/products", img: "/images/2.png" },
+  {
+    title: "Computer items",
+    desc: "",
+    url: "/products",
+    img: "/images/desktop.png",
+  },
 ];
 
 function Products() {
   return (
-    <section className="mx-auto my-6 max-w-7xl">
-      <h4>Discover Our Range</h4>
-      <div className="grid gap-6 px-3 md:grid-cols-2 lg:grid-cols-3">
+    <section className="mx-auto my-6 max-w-7xl  px-3">
+      <h4 className="my-6 text-3xl font-bold text-green-800">
+        Discover Our Range
+      </h4>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {products.map((item, i) => (
           <ProductCard
             title={item.title}
