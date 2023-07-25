@@ -33,7 +33,12 @@ const products = [
     url: "/products",
     img: "/images/plumping_items.png",
   },
-  { title: "Sanitaryware", desc: "", url: "/products", img: "/images/6.png" },
+  {
+    title: "Sanitaryware",
+    desc: "",
+    url: "/products",
+    img: "/images/sanitaryware.png",
+  },
   {
     title: "Glass & Aluminium",
     desc: "",
@@ -44,7 +49,7 @@ const products = [
     title: "Stationary items",
     desc: "",
     url: "/products",
-    img: "/images/sanitaryware.png",
+    img: "/images/stationary.png",
   },
   {
     title: "Computer items",
