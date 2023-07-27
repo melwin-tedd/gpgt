@@ -110,7 +110,7 @@ function Footer() {
         </div>
       </footer>
       <div className="bg-blue-900">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between space-y-3 py-6 text-center text-xs md:flex-col md:text-left">
+        <div className="mx-auto flex max-w-7xl flex-col justify-between space-y-3 py-6 text-center text-xs md:text-left">
           <p className="text-blue-200">
             &copy; {new Date().getFullYear()} - All rights reserved by Grand
             Palace General Trading
