@@ -12,13 +12,13 @@ export default function Home() {
       <main>
         <About />
 
-        <Products />
+        {/* <Products />
 
         <WhoWeAre />
 
         <Expertise />
 
-        <Cta />
+        <Cta /> */}
       </main>
     </>
   );
