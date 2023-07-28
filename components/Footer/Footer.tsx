@@ -59,13 +59,13 @@ function Footer() {
                     <CiFacebook className="transition-colors duration-300 hover:text-green-600" />
                   </Link>
 
-                  <Link href="https://">
+                  <Link href="https://www.instagram.com">
                     <CiInstagram className="transition-colors duration-300 hover:text-green-600" />
                   </Link>
-                  <Link href="https://">
+                  <Link href="https://www.twitter.com">
                     <CiTwitter className="transition-colors duration-300 hover:text-green-600" />
                   </Link>
-                  <Link href="https://">
+                  <Link href="https://www.youtube.com">
                     <CiYoutube className="transition-colors duration-300 hover:text-green-600" />
                   </Link>
                 </div>
