@@ -5,7 +5,7 @@ import leadingLine from "./leading_line.json";
 
 export default function Cta() {
   return (
-    <div className="relative mx-auto my-9 flex max-w-7xl flex-col items-center justify-between bg-green-400 bg-[url(/icons/nut.svg)] bg-right-bottom bg-no-repeat px-24 py-16 text-center text-green-900 lg:flex-row lg:rounded-xl lg:text-left">
+    <div className="relative mx-auto my-9 flex max-w-7xl flex-col items-center justify-between bg-green-400 bg-[url(/icons/Nut.svg)] bg-right-bottom bg-no-repeat px-24 py-16 text-center text-green-900 lg:flex-row lg:rounded-xl lg:text-left">
       <div className="space-y-2">
         <h2 className="text-6xl font-bold">Let{`'`}s talk</h2>
         <p className="pb-6 text-2xl lg:pb-0">About your project</p>
