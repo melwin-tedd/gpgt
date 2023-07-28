@@ -30,7 +30,7 @@ function SlideInfo({ transitionData, currentSlideData }: Props) {
           <h5 className="sr-only">Call us</h5>
           <FiPhoneCall className=" text-xl" />
         </Link>
-        <Button>Explore Products</Button>
+        <Button href="/products">Explore Products</Button>
       </motion.div>
     </>
   );

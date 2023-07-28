@@ -7,6 +7,7 @@ import Button from "../Button";
 import localFont from "next/font/local";
 import { CiFacebook, CiInstagram, CiTwitter, CiYoutube } from "react-icons/ci";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const MENU_LIST = [
   { text: "Home", href: "/" },
@@ -19,6 +20,8 @@ const MENU_LIST = [
 const arialRounded = localFont({ src: "./Arial_rounded_bold.woff2" });
 
 function Navbar() {
+  const pathName = usePathname();
+
   const [navActive, setNavActive] = useState<boolean | null>(null);
   const [activeIdx, setActiveIdx] = useState(-1);
   return (
@@ -95,7 +98,7 @@ function Navbar() {
                 <h5 className="mb-3 text-center font-semibold text-green-300">
                   Let{`'`}s Talk
                 </h5>
-                <Button>Request a Quote</Button>
+                <Button href="/quote">Request a Quote</Button>
               </div>
             </div>
             <div className="text-center">
@@ -121,10 +124,10 @@ function Navbar() {
               className="text-green-900"
               key={menu.text}
             >
-              <NavItem active={activeIdx === idx} {...menu} />
+              <NavItem active={pathName == menu.href} {...menu} />
             </ul>
           ))}
-          <Button>Request a Quote</Button>
+          <Button href="/quote">Request a Quote</Button>
         </div>
       </div>
     </nav>

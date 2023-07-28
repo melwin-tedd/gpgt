@@ -50,7 +50,7 @@ function About() {
         </div>
 
         <div className="col-span-2 flex aspect-video items-end rounded-lg bg-blue-400 p-6 ">
-          <Button>
+          <Button href="">
             <FiPlay className="text-xl " />
             Play Video
           </Button>

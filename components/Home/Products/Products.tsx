@@ -77,7 +77,7 @@ function Products() {
         ))}
       </div>
       <div className="flex items-center justify-center py-9">
-        <Button>Explore our Products</Button>
+        <Button href="/products">Explore our Products</Button>
       </div>
     </section>
   );
