@@ -24,21 +24,19 @@ function Navbar() {
   return (
     <nav className="sticky top-0 z-[9999] bg-white/80 px-3 py-4 drop-shadow backdrop-blur">
       <div className="container flex items-center justify-between">
-        <Link href="/">
-          <div className="flex items-center space-x-3">
-            <Image
-              src="/images/grand_palace_logo.png"
-              width={44}
-              height={38}
-              alt="Grand Palace General Trading Logo"
-            />
-            <h2
-              className={`${arialRounded.className} pt-2 text-lg uppercase text-green-900`}
-            >
-              Grand Palace General Trading
-            </h2>
-          </div>
-        </Link>
+        <div className="flex items-center space-x-3">
+          <Image
+            src="/images/grand_palace_logo.png"
+            width={44}
+            height={38}
+            alt="Grand Palace General Trading Logo"
+          />
+          <h2
+            className={`${arialRounded.className} pt-2 text-lg uppercase text-green-900`}
+          >
+            Grand Palace General Trading
+          </h2>
+        </div>
         <div
           onClick={() => setNavActive(!navActive)}
           className={`flex flex-col gap-1 lg:hidden`}
