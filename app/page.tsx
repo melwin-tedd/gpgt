@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Carousel />
-      {/* <main>
+      <main>
         <About />
 
         <Products />
@@ -19,7 +19,7 @@ export default function Home() {
         <Expertise />
 
         <Cta />
-      </main> */}
+      </main>
     </>
   );
 }
