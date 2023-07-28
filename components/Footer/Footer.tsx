@@ -32,7 +32,7 @@ function Footer() {
   return (
     <>
       <footer className="bg-blue-800 px-3 text-blue-100">
-        <div className="mx-auto grid max-w-7xl gap-8 py-12 pb-16 text-center md:grid-cols-6  md:text-left">
+        <div className="container grid gap-8 py-12 pb-16 md:grid-cols-6">
           <div className="col-span-3 space-y-3 md:space-y-6 md:pr-16">
             <h2 className="text-xl font-bold text-white md:text-2xl">
               Grand Palace General Trading L.L.C
@@ -54,17 +54,26 @@ function Footer() {
               </div>
               <div className="flex flex-col items-center space-y-3">
                 <h5 className=" text-blue-300">Follow us</h5>
-                <div className="mb-3 grid grid-cols-2 gap-3 text-4xl md:text-2xl">
-                  <CiFacebook className="stroke-1" />
-                  <CiInstagram className="stroke-1" />
-                  <CiTwitter className="stroke-1" />
-                  <CiYoutube className="stroke-1" />
+                <div className="mb-3 grid grid-cols-2 gap-3 text-4xl md:text-2xl lg:grid-cols-4">
+                  <Link href="https://www.facebook.com">
+                    <CiFacebook className="transition-colors duration-300 hover:text-green-600" />
+                  </Link>
+
+                  <Link href="https://">
+                    <CiInstagram className="transition-colors duration-300 hover:text-green-600" />
+                  </Link>
+                  <Link href="https://">
+                    <CiTwitter className="transition-colors duration-300 hover:text-green-600" />
+                  </Link>
+                  <Link href="https://">
+                    <CiYoutube className="transition-colors duration-300 hover:text-green-600" />
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="space-y-6">
+          <div className="col-span-2 space-y-6 md:col-span-1">
             <div className="">
               <h6 className="mb-3 font-bold text-blue-400">Company</h6>
               <ul className="space-y-6">
@@ -110,7 +119,7 @@ function Footer() {
         </div>
       </footer>
       <div className="bg-blue-900">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between space-y-3 py-6 text-center text-xs md:text-left">
+        <div className="container flex flex-col justify-between space-y-3 py-6 text-center text-xs md:flex-row md:space-y-0 md:text-left">
           <p className="text-blue-200">
             &copy; {new Date().getFullYear()} - All rights reserved by Grand
             Palace General Trading

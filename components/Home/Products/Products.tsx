@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import Button from "../Button";
+import Button from "../../Button";
 
 const products = [
   {
@@ -61,8 +61,8 @@ const products = [
 
 function Products() {
   return (
-    <section className="mx-auto my-6 max-w-7xl  px-3">
-      <h4 className="my-6 text-3xl font-bold text-green-800">
+    <section className="container my-12  px-3">
+      <h4 className="my-9 text-3xl font-bold text-green-800">
         Discover Our Range
       </h4>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

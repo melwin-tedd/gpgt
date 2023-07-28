@@ -1,9 +1,9 @@
-import Carousel from "@/components/Carousel/Carousel";
+import Carousel from "@/components/Home/Carousel/Carousel";
 import Cta from "@/components/Cta/Cta";
-import Expertise from "@/components/Expertise/Expertise";
+import Expertise from "@/components/Home/Expertise/Expertise";
 import About from "@/components/Home/About";
 import WhoWeAre from "@/components/Home/WhoWeAre";
-import Products from "@/components/Products/Products";
+import Products from "@/components/Home/Products/Products";
 
 export default function Home() {
   return (

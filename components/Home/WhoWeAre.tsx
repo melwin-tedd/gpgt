@@ -22,7 +22,7 @@ const cardContent = [
 function WhoWeAre() {
   return (
     <>
-      <section className="grid grid-cols-2 items-center bg-green-500">
+      <section className="grid items-center bg-green-500 md:grid-cols-2">
         <Image
           src="/images/warehouse.jpg"
           alt=" "
@@ -30,11 +30,11 @@ function WhoWeAre() {
           width={660}
           className="h-full w-full object-cover"
         />
-        <div className="space-y-6 px-16 text-white">
-          <h5 className="text-2xl font-bold">
+        <div className="space-y-6 px-6 py-12 text-white md:px-16 md:py-0">
+          <h5 className="pt-9 text-2xl  font-bold">
             Grand Palace General Trading LLC
           </h5>
-          <p className="max-w-2xl text-lg leading-8">
+          <p className="max-w-2xl pb-12 text-xl leading-8 lg:pb-0">
             Since 2022, Grand Palace General Trading L.L.C., located in Dubai,
             has been delivering exceptional Import, Export, Wholesale, and
             Retail services to the region. Our company is fortified by a team of
@@ -44,7 +44,7 @@ function WhoWeAre() {
           </p>
         </div>
       </section>
-      <div className="mx-auto -mt-9 grid max-w-7xl grid-cols-3 gap-4">
+      <div className="container grid gap-4 py-6 md:-mt-9 md:grid-cols-3 md:py-0">
         {cardContent.map((item, i) => (
           <GlassContainer
             key={i}

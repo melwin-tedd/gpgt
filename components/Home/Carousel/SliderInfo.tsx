@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import OtherInfo from "./OtherInfo";
 import { CurrentSlideData, Data } from "./typings";
-import Button from "../Button";
+import Button from "../../Button";
 import Image from "next/image";
 import { FiPhoneCall } from "react-icons/fi";
 import Link from "next/link";
@@ -27,6 +27,7 @@ function SlideInfo({ transitionData, currentSlideData }: Props) {
           className="flex h-[41px] w-[41px] items-center justify-center rounded-full bg-blue-500 text-xs  transition 
             duration-300 ease-in-out hover:bg-green-700 "
         >
+          <h5 className="sr-only">Call us</h5>
           <FiPhoneCall className=" text-xl" />
         </Link>
         <Button>Explore Products</Button>

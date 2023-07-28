@@ -3,10 +3,10 @@
 import { useState } from "react";
 
 import { AnimatePresence } from "framer-motion";
-import BackgroundImage from "@/components/Carousel/BackgroundImage";
-import Slides from "@/components/Carousel/Slides";
-import SlideInfo from "@/components/Carousel/SliderInfo";
-import Controls from "@/components/Carousel/Controls";
+import BackgroundImage from "@/components/Home/Carousel/BackgroundImage";
+import Slides from "@/components/Home/Carousel/Slides";
+import SlideInfo from "@/components/Home/Carousel/SliderInfo";
+import Controls from "@/components/Home/Carousel/Controls";
 import { CurrentSlideData, Data } from "./typings";
 
 export default function Carousel() {

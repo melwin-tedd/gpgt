@@ -58,9 +58,11 @@ function Controls({
     <div className="flex items-center gap-3 px-0 py-3 md:px-1 md:py-5">
       <SliderButton handleClick={handlePrev}>
         <IoIosArrowBack className=" text-xl" />
+        <h5 className="sr-only">Previous Slide</h5>
       </SliderButton>
       <SliderButton handleClick={handleNext}>
         <IoIosArrowForward className=" text-xl" />
+        <h5 className="sr-only">Next Slide</h5>
       </SliderButton>
       <Progress curIndex={currentSlideData.index} length={sliderData.length} />
     </div>
