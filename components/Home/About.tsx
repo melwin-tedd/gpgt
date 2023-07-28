@@ -36,13 +36,13 @@ function About() {
                 <CiFacebook className="transition-colors duration-300 hover:text-green-600" />
               </Link>
 
-              <Link href="https://">
+              <Link href="">
                 <CiInstagram className="transition-colors duration-300 hover:text-green-600" />
               </Link>
-              <Link href="https://">
+              <Link href="">
                 <CiTwitter className="transition-colors duration-300 hover:text-green-600" />
               </Link>
-              <Link href="https://">
+              <Link href="">
                 <CiYoutube className="transition-colors duration-300 hover:text-green-600" />
               </Link>
             </div>
