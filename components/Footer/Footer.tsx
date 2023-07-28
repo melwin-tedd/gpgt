@@ -8,22 +8,22 @@ const Company_LIST = [
   { text: "Careers", href: "/about" },
 ];
 const Download_LIST = [
-  { text: "Company Profile", href: "/" },
+  { text: "Company Profile", href: "/about" },
   { text: "Catalogue", href: "/about" },
 ];
 const Products_LIST = [
-  { text: "Building Materials", href: "/" },
-  { text: "Safety Products", href: "/about" },
-  { text: "Hardware Tools", href: "/product" },
-  { text: "Tools", href: "/gallery" },
-  { text: "Electrical Items", href: "/contact" },
-  { text: "Plumbing Items", href: "/contact" },
-  { text: "Sanitaryware", href: "/contact" },
+  { text: "Building Materials", href: "/products" },
+  { text: "Safety Products", href: "/products" },
+  { text: "Hardware Tools", href: "/products" },
+  { text: "Tools", href: "/products" },
+  { text: "Electrical Items", href: "/products" },
+  { text: "Plumbing Items", href: "/products" },
+  { text: "Sanitaryware", href: "/products" },
 ];
 const MENU_LIST = [
   { text: "Home", href: "/" },
   { text: "About Us", href: "/about" },
-  { text: "Products", href: "/product" },
+  { text: "Products", href: "/products" },
   { text: "Gallery", href: "/gallery" },
   { text: "Contact", href: "/contact" },
 ];
