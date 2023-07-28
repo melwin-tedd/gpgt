@@ -8,8 +8,8 @@ import Products from "@/components/Home/Products/Products";
 export default function Home() {
   return (
     <>
-      <Carousel />
-      {/* <main>
+      {/* <Carousel /> */}
+      <main>
         <About />
 
         <Products />
@@ -19,7 +19,7 @@ export default function Home() {
         <Expertise />
 
         <Cta />
-      </main> */}
+      </main>
     </>
   );
 }
