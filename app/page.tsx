@@ -8,9 +8,8 @@ import Products from "@/components/Home/Products/Products";
 export default function Home() {
   return (
     <>
-      Hello
-      {/* <Carousel />
-      <main>
+      <Carousel />
+      {/* <main>
         <About />
 
         <Products />
