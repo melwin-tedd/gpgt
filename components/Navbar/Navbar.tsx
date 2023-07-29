@@ -1,12 +1,16 @@
 "use client";
 
-import NavItem from "@/components/Navbar/NavItem";
-import Image from "next/image";
 import { useState } from "react";
-import Button from "../Button";
-import localFont from "next/font/local";
-import { CiFacebook, CiInstagram, CiTwitter, CiYoutube } from "react-icons/ci";
+
+import Image from "next/image";
 import Link from "next/link";
+import localFont from "next/font/local";
+import { usePathname } from "next/navigation";
+
+import { CiFacebook, CiInstagram, CiTwitter, CiYoutube } from "react-icons/ci";
+
+import Button from "../Button";
+import NavItem from "@/components/Navbar/NavItem";
 
 const MENU_LIST = [
   { text: "Home", href: "/" },
@@ -19,6 +23,8 @@ const MENU_LIST = [
 const arialRounded = localFont({ src: "./Arial_rounded_bold.woff2" });
 
 function Navbar() {
+  const pathname = usePathname();
+
   const [navActive, setNavActive] = useState<boolean | null>(null);
   const [activeIdx, setActiveIdx] = useState(-1);
   return (
@@ -128,7 +134,7 @@ function Navbar() {
               className="text-green-900"
               key={menu.text}
             >
-              <NavItem active={activeIdx === idx} {...menu} />
+              <NavItem active={pathname === menu.href} {...menu} />
             </ul>
           ))}
           <Button href="/quote">Request a Quote</Button>
