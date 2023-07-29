@@ -6,14 +6,14 @@ import { FiPlay } from "react-icons/fi";
 
 function About() {
   return (
-    <section id="intro" className=" bg-[#E6E6DF] px-6 py-32">
-      <div className=" mx-auto grid max-w-7xl gap-12 lg:grid-cols-3">
+    <section id="intro" className=" bg-[#E6E6DF] px-6 py-16 md:py-32">
+      <div className="mx-auto grid max-w-7xl lg:grid-cols-3 lg:gap-12">
         <div className="space-y-12">
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-green-800">
               About Grand Palace
             </h2>
-            <p className="pb-6 text-[18px]">
+            <p className="pb-6 text-base md:text-[18px]">
               Since 2022, Grand Palace General Trading L.L.C., located in Dubai,
               has been delivering exceptional Import, Export, Wholesale, and
               Retail services to the region. Our company is fortified by a team
@@ -29,7 +29,7 @@ function About() {
               Who we are, what we stand for
             </Link>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-4 pb-6">
             <h3 className="text-xl font-bold text-green-800">Follow us</h3>
             <div className="flex gap-3 text-3xl ">
               <Link href="https://www.facebook.com">

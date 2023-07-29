@@ -37,7 +37,7 @@ function Footer() {
             <h2 className="text-xl font-bold text-white md:text-2xl">
               Grand Palace General Trading L.L.C
             </h2>
-            <p className=" text-blue-300">
+            <p className="text-blue-300 ">
               GPGT offers top-quality service, professionalism, and integrity to
               utilities, businesses, and diverse trading sectors. We prioritize
               customer satisfaction and positive referrals, fueling our moderate
@@ -53,7 +53,7 @@ function Footer() {
                 </div>
               </div>
               <div className="flex flex-col items-center space-y-3">
-                <h5 className=" text-blue-300">Follow us</h5>
+                <h5 className="text-blue-300 ">Follow us</h5>
                 <div className="mb-3 grid grid-cols-2 gap-3 text-4xl md:text-2xl lg:grid-cols-4">
                   <Link href="https://www.facebook.com">
                     <CiFacebook className="transition-colors duration-300 hover:text-green-600" />
@@ -105,7 +105,7 @@ function Footer() {
               ))}
             </ul>
           </div>
-          <div className="">
+          <div className="col-span-3 md:col-span-1">
             <h6 className="mb-3 font-bold text-blue-400">Quick Links</h6>
             <ul className="space-y-6">
               {MENU_LIST.map((menu, i) => (

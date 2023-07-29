@@ -7,7 +7,6 @@ import Button from "../Button";
 import localFont from "next/font/local";
 import { CiFacebook, CiInstagram, CiTwitter, CiYoutube } from "react-icons/ci";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 const MENU_LIST = [
   { text: "Home", href: "/" },
@@ -20,12 +19,10 @@ const MENU_LIST = [
 const arialRounded = localFont({ src: "./Arial_rounded_bold.woff2" });
 
 function Navbar() {
-  const pathName = usePathname();
-
   const [navActive, setNavActive] = useState<boolean | null>(null);
   const [activeIdx, setActiveIdx] = useState(-1);
   return (
-    <nav className="sticky top-0 z-[9999] bg-white/80 px-3 py-4 drop-shadow backdrop-blur">
+    <nav className="sticky top-0 z-[9999] bg-white/80 py-2 drop-shadow backdrop-blur lg:px-3 lg:py-4">
       <div className="container flex items-center justify-between">
         <Link href="/">
           <div className="flex items-center space-x-3">
@@ -36,7 +33,12 @@ function Navbar() {
               alt="Grand Palace General Trading Logo"
             />
             <h2
-              className={`${arialRounded.className} pt-2 text-lg uppercase text-green-900`}
+              className={`${arialRounded.className} pt-2 text-lg uppercase leading-6 text-green-900 md:hidden`}
+            >
+              Grand Palace <br /> General Trading
+            </h2>
+            <h2
+              className={`${arialRounded.className} hidden pt-2 text-lg uppercase leading-6 text-green-900 md:block`}
             >
               Grand Palace General Trading
             </h2>
@@ -58,19 +60,21 @@ function Navbar() {
           } lg:hidden`}
         >
           <div className="flex items-center justify-between p-3 ">
-            <div className="flex items-center space-x-3">
-              <Image
-                src="/images/grand_palace_logo.png"
-                width={44}
-                height={38}
-                alt="Grand Palace General Trading Logo"
-              />
-              <h2
-                className={`${arialRounded.className} pt-2 text-lg uppercase text-white`}
-              >
-                Grand Palace General Trading
-              </h2>
-            </div>
+            <Link href="/">
+              <div className="flex items-center space-x-3">
+                <Image
+                  src="/images/grand_palace_logo.png"
+                  width={44}
+                  height={38}
+                  alt="Grand Palace General Trading Logo"
+                />
+                <h2
+                  className={`${arialRounded.className} pt-2 text-lg uppercase leading-6 text-green-900`}
+                >
+                  Grand Palace <br /> General Trading
+                </h2>
+              </div>
+            </Link>
             <div
               onClick={() => setNavActive(!navActive)}
               className={`flex flex-col gap-1 bg-white p-3 lg:hidden`}
@@ -81,7 +85,7 @@ function Navbar() {
             </div>
           </div>
           <div className="mx-auto flex h-full w-max flex-col items-center justify-between gap-6 py-32">
-            <div className=" space-y-9 text-center">
+            <div className="space-y-9 text-center">
               {MENU_LIST.map((menu, idx) => (
                 <ul
                   onClick={() => {
@@ -124,7 +128,7 @@ function Navbar() {
               className="text-green-900"
               key={menu.text}
             >
-              <NavItem active={pathName == menu.href} {...menu} />
+              <NavItem active={activeIdx === idx} {...menu} />
             </ul>
           ))}
           <Button href="/quote">Request a Quote</Button>
