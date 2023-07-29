@@ -55,7 +55,7 @@ function WhoWeAre() {
           className="container block pb-12 md:hidden"
         >
           {cardContent.map((item, i) => (
-            <AccordionItem value={`item-${i}`}>
+            <AccordionItem value={`item-${i}`} key={i}>
               <AccordionTrigger>{item.title}</AccordionTrigger>
               <AccordionContent>
                 <Image src={item.img} height={30} width={30} alt={item.title} />
