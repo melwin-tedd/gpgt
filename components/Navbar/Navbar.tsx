@@ -137,7 +137,9 @@ function Navbar() {
               <NavItem active={pathname === menu.href} {...menu} />
             </ul>
           ))}
-          <Button href="/quote">Request a Quote</Button>
+          <Button href="/quote" active={pathname === "/quote"}>
+            Request a Quote
+          </Button>
         </div>
       </div>
     </nav>

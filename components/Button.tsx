@@ -19,7 +19,11 @@ function Button({ children, href, active }: Button) {
         }`}
       ></span>
 
-      <span className="relative flex w-full items-center justify-center gap-3 transition-colors duration-200 ease-in-out group-hover:text-white">
+      <span
+        className={`relative flex w-full items-center justify-center gap-3 transition-colors duration-200 ease-in-out group-hover:text-white ${
+          active ? "text-white" : ""
+        }`}
+      >
         {children}
       </span>
     </Link>
