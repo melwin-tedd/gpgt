@@ -7,6 +7,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import warehouse from "@/public/images/warehouse.jpg";
+
 const cardContent = [
   {
     title: "Quality Products",
@@ -30,9 +32,10 @@ function WhoWeAre() {
     <>
       <section className="grid items-center bg-green-500 md:grid-cols-2">
         <Image
-          src="/images/warehouse.jpg"
-          alt=" "
+          src={warehouse}
+          alt="Warehouse of Grand Palace General Trading"
           height={440}
+          placeholder="blur"
           width={660}
           className="h-full w-full object-cover"
         />
