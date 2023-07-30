@@ -6,14 +6,12 @@ interface navItems {
   active: boolean;
 }
 
-function NavItem({ text, href, active }: navItems) {
+function NavItem({ text, href }: navItems) {
   return (
     <li>
       <Link
         href={href}
-        className={`px-1 py-3 font-bold  hover:border-b-2 hover:border-green-500 ${
-          active ? "border-b-2 border-green-500" : ""
-        }  `}
+        className={`px-1 py-3 font-bold transition-colors duration-200 ease-out hover:text-green-500 focus:outline-green-600`}
       >
         {text}
       </Link>

@@ -8,6 +8,7 @@ import localFont from "next/font/local";
 import { usePathname } from "next/navigation";
 
 import { CiFacebook, CiInstagram, CiTwitter, CiYoutube } from "react-icons/ci";
+import { motion } from "framer-motion";
 
 import Button from "../Button";
 import NavItem from "@/components/Navbar/NavItem";
@@ -122,8 +123,8 @@ function Navbar() {
             </div>
           </div>
         </div>
-
         {/* Desktop  */}
+
         <div className={`hidden items-center gap-6 lg:flex`}>
           {MENU_LIST.map((menu, idx) => (
             <ul
@@ -131,10 +132,16 @@ function Navbar() {
                 setActiveIdx(idx);
                 setNavActive(false);
               }}
-              className="text-green-900"
+              className="relative text-green-900"
               key={menu.text}
             >
               <NavItem active={pathname === menu.href} {...menu} />
+              {pathname === menu.href && (
+                <motion.div
+                  layoutId="active"
+                  className="absolute inset-0 -bottom-3 mt-auto h-1 rounded-full bg-green-500"
+                />
+              )}
             </ul>
           ))}
           <Button href="/quote" active={pathname === "/quote"}>
