@@ -23,6 +23,7 @@
     "lottie-react": "^2.4.0",
     "lucide-react": "^0.263.1",
     "next": "13.4.12",
+    "nextjs-progressbar": "^0.0.16",
     "postcss": "8.4.27",
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.4.1",
