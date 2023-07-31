@@ -9,7 +9,6 @@ import { usePathname } from "next/navigation";
 
 import { CiFacebook, CiInstagram, CiTwitter, CiYoutube } from "react-icons/ci";
 import { motion } from "framer-motion";
-import NextNProgress from "nextjs-progressbar";
 
 import Button from "../Button";
 import NavItem from "@/components/Navbar/NavItem";
