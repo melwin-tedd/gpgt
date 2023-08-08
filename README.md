@@ -13,9 +13,5 @@ pnpm dev
 ```
 
 ## TODO
-* Gatsby
-  * docs
-- Gatsby
-  - docs
-+ Gatsby
-  + docs
+* HTML Accessibility
+  * Add title tags for icons (Tooltip) `<Image **title="Tooltip"** />`
