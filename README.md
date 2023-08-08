@@ -14,4 +14,4 @@ pnpm dev
 
 ## TODO
 * HTML Accessibility
-  * Add title tags for icons (Tooltip) `<Image **title="Tooltip"** />`
+  * Add title tags for icons (Tooltip) ``<Image **title="Tooltip"** />``
