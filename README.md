@@ -12,13 +12,16 @@ yarn dev
 pnpm dev
 ```
 
+
 ## TODO
 * HTML Accessibility
   * Add title tags for icons (Tooltip) ```<Image title="Tooltip" />```
  
  * Components
     * Scroll to Top
-      ```bash
+      
+      
+```bash
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -75,5 +78,4 @@ export const ScrollToTop = () => {
   );
 };
 
-      ```
-      
+```
