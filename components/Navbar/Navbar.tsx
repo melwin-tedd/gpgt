@@ -41,7 +41,7 @@ function Navbar() {
                 alt="Grand Palace General Trading Logo"
               />
               <h2
-                className={`${arialRounded.className} pt-2 text-lg uppercase leading-6 text-green-900 md:hidden`}
+                className={`${arialRounded.className} pt-2 text-lg uppercase leading-6  text-green-900 md:hidden`}
               >
                 Grand Palace <br /> General Trading
               </h2>
